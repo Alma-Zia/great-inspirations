@@ -1,0 +1,162 @@
+<div class="wrapper" style="direction:rtl;">
+	<div style="text-align:center;">
+		<h2 style="color:purple;">dgsssdsdf sdf</h2>
+		<p>dgsssdsdf sdf</p>
+	</div>
+	<div style="text-align:center;">
+		<h2>cbxcbvdx</h2>
+		<div class="nar-land-syl1">
+			<div class="fourset">
+				<div>
+					<img src="https://naringol.com/media/wysiwyg/narin-box-antiaging.jpg" />
+				</div>
+				<div class="nar-land-cont right-arrow purple">
+					<h4>sfsf fsf </h4>
+					<p>fsf sfaf afafa</p>
+					<a href="">کلیک کنید</a>
+				</div>
+				<div class="nar-land-cont left-arrow gray">
+					<h4>sdfsd fsdf</h4>
+					<p>fdsfs fsdfsd</p>
+					<a>کلیک کنید</a>
+				</div>
+				<div>
+					<img src="https://naringol.com/media/wysiwyg/narin-box-antiaging.jpg">
+				</div>
+			</div>
+			<div class="twoset">
+				<div  class="nar-land-cont left-arrow gray">
+					<h4>sfsa fsdfs sfs</h4>
+					<p>sdfsd sdfsdf sfsdf</p>
+					<a>کلیک کنید</a>
+				</div>
+				<div>
+					<img src="https://naringol.com/media/catalog/product/cache/5/image/500x500/882c15d1c7c4120ef67bb6c3f0759256/j/o/jojoba-carrier-oil-product-naringol.jpg" />
+				</div>
+			</div>
+			<div class="twoset">
+				<div>
+					<img src="https://naringol.com/media/catalog/product/cache/5/image/500x500/882c15d1c7c4120ef67bb6c3f0759256/j/o/jojoba-carrier-oil-product-naringol.jpg" />
+				</div>
+				<div  class="nar-land-cont right-arrow purple">
+					<h4>s sfss</h4>
+					<p>fsf  sfsf sfs</p>
+					<a>کلیک کنید</a>
+				</div>
+			</div>
+			<div class="fourset">
+				<div>
+					<img src="https://naringol.com/media/wysiwyg/narin-box-antiaging.jpg" />
+				</div>				
+				<div class="nar-land-cont right-arrow purple">
+					<h4>fsfs sfsf sfsdfs</h4>
+					<p>fs sfsfsf sfsafs</p>
+					<a>کلیک کنید</a>
+				</div>
+				<div class="nar-land-cont left-arrow gray">
+					<h4>sfsf sfsf afsfs</h4>
+					<p>dfsd sdfsf sfesfse</p>
+					<a>کلیک کنید</a>
+				</div>
+				<div>
+					<img src="https://naringol.com/media/wysiwyg/narin-box-antiaging.jpg">
+				</div>
+			</div>
+			<div class="twoset">
+				<div  class="nar-land-cont left-arrow gray">
+					<h4>s sfss</h4>
+					<p>fsf  sfsf sfs</p>
+					<a>کلیک کنید</a>
+				</div>
+				<div>
+					<img src="https://naringol.com/media/catalog/product/cache/5/image/500x500/882c15d1c7c4120ef67bb6c3f0759256/j/o/jojoba-carrier-oil-product-naringol.jpg" />
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+
+<style>
+.nar-land-syl1{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	color:white;
+}
+.nar-land-syl1>div{
+	height:400px;	
+	flex: 1 1 100%;
+}
+.nar-land-syl1>div .nar-land-cont{
+	z-index:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	position:relative;
+    padding: 10px 15px;
+
+}
+.nar-land-cont:after{
+	content: "";
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    z-index: 1;
+    margin-top: -10px;
+    position: absolute;
+    top: 50%;
+	background: inherit;
+}
+.left-arrow:after{
+	left:-10px;
+}
+.right-arrow:after{
+	right:-10px;
+}
+.nar-land-syl1 .gray{
+	background:#767676;
+}
+.nar-land-syl1 .purple{
+	background:#7036af;
+}
+.nar-land-syl1 img{
+	object-fit:cover;
+	object-position:center;
+	height:100%;
+	width:100%;
+}
+.nar-land-syl1 a{
+	display:inline-block;
+	padding:5px 15px;
+	background:white;
+	color:black;
+	cursor: pointer;
+}
+.nar-land-syl1 .fourset > div{
+	width:50%;
+	height: 50%;
+	float:right;
+}
+.nar-land-syl1 .twoset > div{
+	width:50%;
+	height: 100%;
+	float:right;
+}
+/*.nar-land-syl1>div:nth-child(-n+2)>div,.nar-land-syl1>div:nth-last-child(-n+2)>div,
+.nar-land-syl1>div:nth-child(-n+2)>img,.nar-land-syl1>div:nth-last-child(-n+2)>img{
+	height:50%;
+}
+.nar-land-syl1>div:nth-child(n+3):nth-last-child(n+3)>div,
+.nar-land-syl1>div:nth-child(n+3):nth-last-child(n+3)>img{
+	height:100%;
+}*/
+.nar-land-syl1 h4, h3, h1{
+ margin:0
+}
+@media (min-width: 768px){
+	.nar-land-syl1>div{
+	flex: 1 1 50%;
+	}
+}
+</style>
